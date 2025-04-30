@@ -13,8 +13,9 @@
     --breakpoint-3xl: 1920px;
 
     /* Adding some color using the hexcode here */
-    --color-primary: #f9d342;
     --color-secondary: #292826;
+    --color-elegantbg: #0f172a;
+    --color-indigo: #4f46e5;
 
 }
 
@@ -32,10 +33,10 @@
 }
 
 .typing {
-  font-size: 20px;
   font-weight: bold;
   color: #292826;
   margin: 0 5px;
+  animation: colorChange 1s infinite;
 }
 
 .cursor {
@@ -45,11 +46,24 @@
   animation: blink 0.4s infinite;
 }
 
+/* animation for the blinking effect */
 @keyframes blink {
   0%, 50%, 100% {
     opacity: 1;
   }
   25%, 75% {
     opacity: 0;
+  }
+}
+
+@keyframes colorChange{
+  0%{
+    color: #1e293b;
+  }
+  50%{
+    color: #38bdf8;
+  }
+  100%{
+    color: #818cf8;
   }
 }
