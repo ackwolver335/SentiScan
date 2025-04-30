@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+/* Applying custom css regarding different breakpoints */
+@theme{
+    
+    /* defining some breakpoints here another way to set the breakpoints */
+    --breakpoint-xsz: 320px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+    --breakpoint-3xl: 1920px;
+
+    /* Adding some color using the hexcode here */
+    --color-primary: #f9d342;
+    --color-secondary: #292826;
+
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff; /* or #f9f9f9 for light gray */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.typing {
+  font-size: 20px;
+  font-weight: bold;
+  color: #292826;
+  margin: 0 5px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: #292826;
+  animation: blink 0.4s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
