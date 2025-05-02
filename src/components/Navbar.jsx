@@ -1,12 +1,23 @@
 import React from 'react'
 import Logo from '../assets/Logo.png'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <div className="flex flex-row justify-between xsz:shadow-md xsz:rounded-lg xsz:px-4">
+        <div className="flex flex-row justify-between align-middle items-center xsz:shadow-md xsz:rounded-lg lg:rounded-2xl xl:rounded-none lg:shadow-lg xsz:px-4 md:px-5 lg:px-8 xl:px-16 bg-white/30 backdrop-blur-3xl">
 
             {/* Icon for the overpage website */}
-            <img src={Logo} alt="Webpage Logo" className="xsz:w-12 cursor-pointer sm:w-16" />
+            <NavLink to = "/">
+                <img src={Logo} alt="Webpage Logo" className="xsz:w-12 cursor-pointer sm:w-16 lg:w-20" />
+            </NavLink>
+
+            {/* list for routing to the pages */}
+            <ul className="flex flex-row font-poppins md:font-semibold text-indigo md:gap-3 lg:gap-5 xl:gap-7 md:text-lg">
+                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Home </NavLink>
+                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Analyze </NavLink>
+                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Features </NavLink>
+                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Use Cases </NavLink>
+            </ul>
 
             {/* Icons for Menu Button */}
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-menu-button-wide-fill xsz:w-6 text-indigo md:hidden sm:w-8" viewBox="0 0 16 16">

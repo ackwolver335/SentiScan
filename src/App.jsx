@@ -19,12 +19,12 @@ function App() {
     // variable as a timer for animation
     setTimeout(() => {
       setLoading(false)
-    },5700);
+    },5400);
 
   },[]);
 
   if(loading){
-    return <div className="loader xsz:text-base font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
+    return <div className="loader xsz:text-base lg:text-lg xl:text-2xl font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
   }
 
   return (

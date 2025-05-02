@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const words = ["Postive","Negative","Neutral"];
+const words = ["Positive","Negative","Neutral"];
 
 export default function TypingText() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -19,7 +19,7 @@ export default function TypingText() {
       setDisplayedText(updatedText);
 
       if (!isDeleting && updatedText === currentWord) {
-        setTimeout(() => setIsDeleting(true), 250);
+        setTimeout(() => setIsDeleting(true), 200);
       } else if (isDeleting && updatedText === '') {
         setIsDeleting(false);
         setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
@@ -30,9 +30,9 @@ export default function TypingText() {
   }, [displayedText, isDeleting, currentWordIndex]);
 
   return (
-    <div className="typing">
+    <span className="typing">
       {displayedText}
-      <div className="cursor">|</div>
-    </div>
+      <span className="cursor">|</span>
+    </span>
   );
 }
