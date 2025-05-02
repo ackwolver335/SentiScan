@@ -12,11 +12,11 @@ export default function Navbar() {
             </NavLink>
 
             {/* list for routing to the pages */}
-            <ul className="flex flex-row font-poppins md:font-semibold text-indigo md:gap-3 lg:gap-5 xl:gap-7 md:text-lg">
-                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Home </NavLink>
-                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Analyze </NavLink>
-                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Features </NavLink>
-                <NavLink to = "/" className = "hover:text-secondary hover:underline-offset-8 hover:underline duration-75"> Use Cases </NavLink>
+            <ul className="flex flex-row font-poppins md:font-semibold text-indigo md:gap-3 lg:gap-5 xl:gap-7 lg:text-lg">
+                <NavLink to = "/" className = "hover:text-secondary active:text-emergreen hover:underline-offset-8 hover:underline duration-75"> Home </NavLink>
+                <NavLink to = "/" className = "hover:text-secondary active:text-emergreen hover:underline-offset-8 hover:underline duration-75"> Analyze </NavLink>
+                <NavLink to = "/" className = "hover:text-secondary active:text-emergreen hover:underline-offset-8 hover:underline duration-75"> Features </NavLink>
+                <NavLink to = "/" className = "hover:text-secondary active:text-emergreen hover:underline-offset-8 hover:underline duration-75"> Use Cases </NavLink>
             </ul>
 
             {/* Icons for Menu Button */}
