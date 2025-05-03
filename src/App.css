@@ -1,89 +1,114 @@
 @import "tailwindcss";
 
 /* Applying custom css regarding different breakpoints */
-@theme{
-    
-    /* defining some breakpoints here another way to set the breakpoints */
-    --breakpoint-xsz: 320px;
-    --breakpoint-sm: 640px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1280px;
-    --breakpoint-2xl: 1536px;
-    --breakpoint-3xl: 1920px;
+@theme {
 
-    /* Adding some color using the hexcode here */
-    --color-secondary: #292826;
-    --color-elegantbg: #0f172a;
-    --color-indigo: #4f46e5;
-    --color-emergreen: #10b981;
+  /* defining some breakpoints here another way to set the breakpoints */
+  --breakpoint-xsz: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+
+  /* Adding some color using the hexcode here */
+  --color-secondary: #292826;
+  --color-elegantbg: #0f172a;
+  --color-indigo: #4f46e5;
+  --color-emergreen: #10b981;
 
 }
 
 /* Including the font-family here only */
-@layer utilities{
-  .font-poppins{
-      font-family: "Poppins", serif;
+@layer utilities {
+  .font-poppins {
+    font-family: "Poppins", serif;
   }
 
-  .font-merriweather{
-      font-family: "Merriweather", serif;
+  .font-merriweather {
+    font-family: "Merriweather", serif;
   }
 
-  .font-inter{
-      font-family: "Inter", serif;
+  .font-inter {
+    font-family: "Inter", serif;
   }
 
-  .font-roboto{
-      font-family: "Roboto", serif;
+  .font-roboto {
+    font-family: "Roboto", serif;
   }
-}
 
-.loader {
+  .loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #ffffff; /* or #f9f9f9 for light gray */
+    background-color: #ffffff;
+    /* or #f9f9f9 for light gray */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
-}
-
-.typing {
-  font-weight: bold;
-  color: #292826;
-  margin: 0 5px;
-  animation: colorChange 1s infinite;
-}
-
-.cursor {
-  display: inline-block;
-  width: 1px;
-  background-color: #292826;
-  animation: blink 0.4s infinite;
-}
-
-/* animation for the blinking effect */
-@keyframes blink {
-  0%, 50%, 100% {
-    opacity: 1;
   }
-  25%, 75% {
-    opacity: 0;
-  }
-}
 
-@keyframes colorChange{
-  0%{
-    color: #1e293b;
+  .typing {
+    font-weight: bold;
+    color: #292826;
+    margin: 0 5px;
+    animation: colorChange 1s infinite;
   }
-  50%{
-    color: #38bdf8;
+
+  .cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: #292826;
+    animation: blink 0.4s infinite;
   }
-  100%{
-    color: #818cf8;
+
+  .quote {
+    animation: inCome 0.5s linear;
+  }
+
+  /* animation for the blinking effect */
+  @keyframes blink {
+
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: #1e293b;
+    }
+
+    50% {
+      color: #38bdf8;
+    }
+
+    100% {
+      color: #818cf8;
+    }
+  }
+
+  @keyframes inCome{
+
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+
+    to {
+      opacity: 1;
+      scale: 1;
+    }
   }
 }
