@@ -29,6 +29,10 @@ function App() {
     return <div className="loader xsz:text-base lg:text-lg xl:text-2xl font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
   }
 
+  // hardcoding regarding the overall body animation and other effect
+  document.querySelector('body').style.animation = "fadeIn 0.8s ease-in-out";
+  document.querySelector('html').style.scrollbarColor = "#4f46e5 #ffffff";
+
   return (
     <>
 

@@ -17,6 +17,7 @@
   --color-elegantbg: #0f172a;
   --color-indigo: #4f46e5;
   --color-emergreen: #10b981;
+  --color-darkSlate: #1f2937;
 
 }
 
@@ -67,7 +68,7 @@
   }
 
   .quote {
-    animation: inCome 0.5s linear;
+    animation: inCome 1s linear;
   }
 
   /* animation for the blinking effect */
@@ -110,5 +111,19 @@
       opacity: 1;
       scale: 1;
     }
+  }
+}
+
+body{
+  background: #ffffff;
+}
+
+/* smoother animation regarding the overall page */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

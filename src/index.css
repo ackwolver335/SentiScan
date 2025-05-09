@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    cursor: url('./assets/blue-gaming.png'),auto;
+}
