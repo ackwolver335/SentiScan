@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
     return (
-        <div className="footer flex flex-col font-poppins font-semibold xsz:px-4 xsz:py-3 sm:px-6 sm:py-5 md:px-8 lg:px-8 xl:px-16 xsz:gap-2 sm:gap-4 align-middle text-secondary">
+        <div className="footer flex flex-col font-poppins font-semibold xsz:px-4 xsz:py-3 sm:px-6 sm:py-5 md:px-8 lg:px-8 xl:px-16 xsz:gap-2 sm:gap-4 align-middle text-secondary bg-white">
 
             {/* Main Block of links regarding Redirection */}
             <div className="linksBlock flex flex-row justify-between items-center">

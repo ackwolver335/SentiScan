@@ -4,7 +4,7 @@ import Features from '../components/Features'
 
 export default function Home() {
     return (
-        <div className = "xsz:py-4 sm:py-3">
+        <div className = "xsz:py-4 sm:py-3 bg-white">
             <FirstSection />
             <Features />
         </div>

@@ -14,7 +14,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="mainNav fixed w-full flex flex-row justify-between align-middle items-center xsz:shadow-md xsz:rounded-lg lg:rounded-2xl xl:rounded-none lg:shadow-lg xsz:px-4 md:px-5 lg:px-8 xl:px-16 bg-white/5 xsz:backdrop-blur-xl">
+        <div className="mainNav fixed w-full flex flex-row justify-between align-middle items-center xsz:shadow-md xsz:rounded-lg lg:rounded-2xl xl:rounded-none lg:shadow-lg xsz:px-4 md:px-5 lg:px-8 xl:px-16 bg-white/5 xsz:backdrop-blur-lg lg:backdrop-blur-md xl:backdrop-opacity-95 z-20">
 
             {/* Icon for the overpage website */}
             <NavLink to="/">
