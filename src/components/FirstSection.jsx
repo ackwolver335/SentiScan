@@ -1,5 +1,5 @@
 import React from 'react'
-import MainFrame from '../assets/MainFrame.jpg'
+import MainFrame from '../assets/images/MainFrame.jpg'
 
 export default function FirstSection() {
 
