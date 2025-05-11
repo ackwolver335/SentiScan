@@ -14,7 +14,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="mainNav fixed w-full flex flex-row justify-between align-middle items-center xsz:shadow-md xsz:rounded-lg lg:rounded-2xl xl:rounded-none lg:shadow-lg xsz:px-4 md:px-5 lg:px-8 xl:px-16 bg-white/5 xsz:backdrop-blur-lg lg:backdrop-blur-md xl:backdrop-opacity-95 z-20">
+        <div className="mainNav fixed w-full flex flex-row justify-between align-middle items-center xsz:shadow-md xsz:rounded-lg lg:rounded-2xl xl:rounded-none lg:shadow-lg xsz:px-4 md:px-5 lg:px-8 xl:px-16 bg-white/5 xsz:backdrop-blur-lg md:bg-white/40 lg:bg-white/10 lg:backdrop-blur-md xl:backdrop-opacity-95 z-20">
 
             {/* Icon for the overpage website */}
             <NavLink to="/">
@@ -23,10 +23,10 @@ export default function Navbar() {
 
             {/* list for routing to the pages */}
             <ul className="menuList flex xsz:flex-col xsz:absolute xsz:top-14 xsz:right-4 xsz:items-center xsz:text-white xsz:bg-indigo/80 xsz:translate-x-40 md:bg-transparent xsz:p-3 xsz:rounded-md xsz:gap-2 md:relative md:top-0 md:translate-x-0 md:right-0 md:flex-row font-poppins md:font-semibold md:text-indigo md:gap-4 xsz:text-sm lg:gap-6 xl:gap-8 md:text-base lg:text-lg 3xl:text-[20px] ease-in duration-150">
-                <NavLink to="/" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Home </NavLink>
-                <NavLink to="/" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Analyze </NavLink>
-                <NavLink to="/" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Features </NavLink>
-                <NavLink to="/" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Use Cases </NavLink>
+                <a href = "#" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Home </a>
+                <a href = "#" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Analyze </a>
+                <a href = "#feature" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Features </a>
+                <a href = "#" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Use Cases </a>
             </ul>
 
             {/* Icons for Menu Button */}

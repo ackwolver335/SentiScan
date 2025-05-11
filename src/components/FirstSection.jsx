@@ -4,7 +4,7 @@ import MainFrame from '../assets/images/MainFrame.jpg'
 export default function FirstSection() {
 
     return (
-        <div className="firstBlock">
+        <div className="firstBlock" id = "#home">
 
             {/* Here we have the image for the background of this Block in App.css */}
             <div className="imageBlock flex flex-col xl:items-center">
