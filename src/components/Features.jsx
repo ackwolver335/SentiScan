@@ -8,10 +8,10 @@ import PrivacyFirst from '../assets/images/PrivacyFirst.webp'
 
 export default function Features() {
     return (
-        <div className="xsz:px-5 sm:px-7 md:px-8 md:py-7 xl:py-8 xsz:py-6 flex flex-col xsz:gap-3 z-10 bg-white" id = "feature">
+        <div className="xsz:px-5 xsz:py-10 sm:px-7 sm:py-14 md:px-8 xl:pt-30 lg:pb-5 flex flex-col xsz:gap-3 z-10 bg-white" id = "feature">
 
             {/* Initial Block of Heading */}
-            <div className="headingBlock flex flex-row justify-between xsz:px-1 md:px-2 lg:px-6 xl:px-8 3xl:px-10">
+            <div className="headingBlock flex flex-row justify-between items-center xsz:px-1 md:px-2 lg:px-6 xl:px-8 3xl:px-10">
 
                 {/* Main Heading regarding the Features's Section */}
                 <h2 className="xsz:text-lg md:text-xl xl:text-2xl font-merriweather xsz:font-bold text-indigo"> Features Scales </h2>

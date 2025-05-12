@@ -22,11 +22,11 @@ export default function Navbar() {
             </NavLink>
 
             {/* list for routing to the pages */}
-            <ul className="menuList flex xsz:flex-col xsz:absolute xsz:top-14 xsz:right-4 xsz:items-center xsz:text-white xsz:bg-indigo/80 xsz:translate-x-40 md:bg-transparent xsz:p-3 xsz:rounded-md xsz:gap-2 md:relative md:top-0 md:translate-x-0 md:right-0 md:flex-row font-poppins md:font-semibold md:text-indigo md:gap-4 xsz:text-sm lg:gap-6 xl:gap-8 md:text-base lg:text-lg 3xl:text-[20px] ease-in duration-150">
-                <a href = "#" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Home </a>
-                <a href = "#" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Analyze </a>
-                <a href = "#feature" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Features </a>
-                <a href = "#" className="md:hover:text-secondary active:text-emergreen md:hover:underline-offset-8 md:hover:underline md:duration-75"> Use Cases </a>
+            <ul className="menuList flex xsz:flex-col xsz:absolute xsz:top-14 xsz:right-4 xsz:items-center xsz:bg-indigo/70 xsz:backdrop-blur-xl sm:backdrop-blur-3xl xsz:translate-x-40 md:bg-transparent xsz:p-3 xsz:rounded-md xsz:gap-2 sm:top-20 sm:text-base sm:px-6 sm:py-4 sm:gap-3 xsz:shadow-lg sm:shadow-2xl md:shadow-none md:relative md:top-0 md:translate-x-0 md:right-0 md:flex-row font-poppins md:font-semibold md:gap-4 xsz:text-sm lg:gap-6 xl:gap-8 md:text-base lg:text-lg 3xl:text-[20px] ease-in duration-150">
+                <a href = "#" className={`md:hover:text-secondary xsz:text-white md:text-indigo md:hover:underline-offset-8 md:hover:underline md:duration-75`}> Home </a>
+                <a href = "#" className={`md:hover:text-secondary xsz:text-white md:text-indigo md:hover:underline-offset-8 md:hover:underline md:duration-75`}> Analyze </a>
+                <a href = "#feature" className={`md:hover:text-secondary xsz:text-white md:text-indigo md:hover:underline-offset-8 md:hover:underline md:duration-75`}> Features </a>
+                <a href = "#useCase" className={`md:hover:text-secondary xsz:text-white md:text-indigo md:hover:underline-offset-8 md:hover:underline md:duration-75`}> Use Cases </a>
             </ul>
 
             {/* Icons for Menu Button */}
