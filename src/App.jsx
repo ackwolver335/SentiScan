@@ -36,16 +36,10 @@ function App() {
   return (
     <>
 
-      {/* leaving the space for the navbar here */}
-      <Navbar />
-
       {/* Setting up the routes here regarding different pages */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-
-      {/* adding a footer now for further page redirection */}
-      <Footer />
 
     </>
   )
