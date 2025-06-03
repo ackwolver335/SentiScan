@@ -1,7 +1,4 @@
 import React from 'react'
-import FirstSection from '../components/FirstSection'
-import Features from '../components/Features'
-import UseCases from '../components/UseCases'
 
 export default function Home() {
     return (
