@@ -66,7 +66,7 @@ export default function IntroBlock() {
             <div className="textContent flex flex-col xsz:gap-1">
               <h3 className="font-inter xsz:text-sm  xl:text-base font-semibold text-yellow-600 flex flex-row items-center xsz:gap-2"> <Meh className="xsz:w-5 xsz:h-5 xl:w-7 xl:h-7 text-yellow-600" /> Neutral Sentiment : 22% </h3>
               <p className="text-[12px] text-yellow-600 font-inter xl:text-sm">
-                "I absolutely love this product ! The customer service was excellent."
+                "The product arrived on time. It works as described."
               </p>
             </div>
 
@@ -82,7 +82,7 @@ export default function IntroBlock() {
             <div className="textContent flex flex-col xsz:gap-1">
               <h3 className="font-inter xsz:text-sm xl:text-base font-semibold text-red-600 flex flex-row items-center xsz:gap-2"> <Frown className="xsz:w-5 xsz:h-5 xl:w-7 xl:h-7 text-red-600" /> Negative Sentiment : 10% </h3>
               <p className="text-[12px] text-red-600 font-inter xl:text-sm">
-                "I absolutely love this product ! The customer service was excellent."
+                "The website was difficult to navigate and I couldn't find what I needed."
               </p>
             </div>
 
