@@ -29,7 +29,7 @@ export default function Navbar() {
   },1000);
 
   return (
-    <div className="fixed flex flex-row justify-between items-center xsz:top-1 xsz:right-1 xsz:left-1 sm:right-2 sm:left-2 xl:top-3 xl:left-5 xl:right-5 xsz:bg-white/80 xsz:m-3 xsz:p-3 sm:p-4 xl:px-5 xl:py-4 lg:rounded-xl xsz:rounded-md xsz:backdrop-blur-xl md:backdrop-blur-2xl xsz:shadow-lg">
+    <div className="fixed flex flex-row justify-between items-center xsz:top-1 xsz:right-1 xsz:left-1 sm:right-2 sm:left-2 xl:top-3 xl:left-5 xl:right-5 xsz:bg-white/70 lg:bg-white/55 xsz:m-3 xsz:p-3 sm:p-4 xl:px-5 xl:py-4 lg:rounded-xl xsz:rounded-md xsz:backdrop-blur-md lg:backdrop-blur-lg md:backdrop-blur-2xl xsz:shadow-lg">
       
       {/* initial div for Icon and site name */}
       <div className="iconText flex flex-row items-center xsz:gap-1.5 sm:gap-2 2xl:gap-2 cursor-pointer">

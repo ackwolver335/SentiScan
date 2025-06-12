@@ -2,7 +2,7 @@ import { Smile, Frown, Meh } from 'lucide-react'
 
 export default function IntroBlock() {
   return (
-    <div className="bg-dots xsz:pt-22 sm:pt-30 xsz:pb-10 xsz:px-6 lg:px-8 lg:pt-32 flex xsz:flex-col md:flex-row xsz:gap-3 sm:gap-5 xsz:justify-between lg:justify-center 2xl:justify-evenly lg:gap-10 xl:gap-0 items-center">
+    <div className="bg-dots xsz:pt-22 sm:pt-30 xsz:pb-10 lg:pb-20 xsz:px-6 lg:px-8 lg:pt-36 flex xsz:flex-col md:flex-row xsz:gap-3 sm:gap-5 xsz:justify-between lg:justify-center 2xl:justify-evenly lg:gap-10 xl:gap-0 items-center">
 
       {/* first Initial Block regarding */}
       <div className="headingBlock flex flex-col xsz:gap-4 md:gap-5 xl:gap-7 xsz:items-center md:items-start sm:w-4/6 lg:w-2/5 xl:w-3/6 2xl:w-2/6 xsz:px-3 xsz:py-2">
