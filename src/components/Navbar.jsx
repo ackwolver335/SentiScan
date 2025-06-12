@@ -40,7 +40,7 @@ export default function Navbar() {
       {/* Get Started Block */}
       <ul className="navList font-poppins flex xsz:absolute md:relative xsz:flex-col md:flex-row xsz:bg-white/90 md:bg-transparent xsz:backdrop-blur-3xl md:backdrop-blur-none xsz:shadow-lg md:shadow-none xsz:rounded-lg md:rounded-none xsz:top-16 sm:top-20 md:top-0 xsz:left-1 xsz:right-1 md:left-0 md:right-0 xsz:translate-x-[800px] md:translate-x-0 xsz:px-3 xsz:py-4 sm:px-4 md:p-0 xsz:gap-1.5 md:gap-5 xl:gap-7 xsz:text-sm sm:text-base xl:text-lg xsz:text-secondary xsz:font-semibold md:font-medium ease-in duration-250">
         <li> <a href = "#features" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Features </a> </li>
-        <li> <a href = "#" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> How It Works </a> </li>
+        <li> <a href = "#working" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> How It Works </a> </li>
         <li> <a href = "#" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Use Cases </a> </li>
         <li> <a href = "#" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Demo </a> </li>
       </ul>

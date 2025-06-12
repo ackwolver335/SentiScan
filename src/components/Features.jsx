@@ -2,7 +2,7 @@ import { Languages, FileBarChart, PieChart, LineChart, TrendingUp } from 'lucide
 
 export default function Features() {
   return (
-    <div className="flex flex-col xsz:py-16 xl:py-22 xsz:px-5 xsz:gap-7 lg:gap-10 xl:gap-12 bg-gray-100" id="features">
+    <div className="flex flex-col xsz:py-16 xl:py-24 xsz:px-5 xsz:gap-7 lg:gap-10 xl:gap-12 bg-gray-100" id="features">
 
       {/* Intial Intro Block */}
       <div className="flex flex-col items-center justify-center text-center xsz:gap-2 sm:gap-3 xl:gap-5">
