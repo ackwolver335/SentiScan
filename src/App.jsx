@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <div className="loader xsz:text-base lg:text-lg xl:text-2xl font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
+    // return <div className="loader xsz:text-base lg:text-lg xl:text-2xl font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
   }
 
   // hardcoding regarding the overall body animation and other effect

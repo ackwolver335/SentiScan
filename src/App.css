@@ -13,12 +13,9 @@
 
   /* Adding some color using the hexcode here */
   --color-secondary: #292826;
-  --color-elegantbg: #0f172a;
   --color-indigo: #3F51B5;
-  --color-emergreen: #10b981;
-  --color-darkSlate: #1f2937;
   --color-charcoal: #2C2C2C;
-
+  --color-darkBG: #0f172a;
 }
 
 /* Including the font-family here only */
@@ -37,6 +34,12 @@
 
   .font-roboto {
     font-family: "Roboto", serif;
+  }
+
+  .bg-dots {
+    background-color: #0f172a;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.288) 1px, transparent 1px);
+    background-size: 18px 18px;
   }
 
   .loader {
@@ -71,7 +74,7 @@
     animation: inCome 0.8s linear;
   }
 
-  .blockAnimate{
+  .blockAnimate {
     animation: inCome linear;
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
@@ -106,7 +109,7 @@
     }
   }
 
-  @keyframes inCome{
+  @keyframes inCome {
 
     from {
       opacity: 0;
@@ -121,7 +124,7 @@
 
 }
 
-body{
+body {
   background: #ffffff;
 }
 
@@ -130,6 +133,7 @@ body{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
