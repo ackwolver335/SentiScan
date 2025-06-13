@@ -11,40 +11,40 @@ import Navbar from './components/Navbar';
 
 function App() {
 
-  // defining the state for loading animation
-  const [loading, setLoading] = useState(true);
+    // defining the state for loading animation
+    const [loading, setLoading] = useState(true);
 
-  // placing animation for a particular time interval
-  useEffect(() => {
+    // placing animation for a particular time interval
+    useEffect(() => {
 
-    // variable as a timer for animation
-    setTimeout(() => {
-      setLoading(false)
-    }, 5300);
+        // variable as a timer for animation
+        setTimeout(() => {
+            setLoading(false)
+        }, 5300);
 
-  }, []);
+    }, []);
 
-  if (loading) {
-    // return <div className="loader xsz:text-base lg:text-lg xl:text-2xl font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
-  }
+    if (loading) {
+        // return <div className="loader xsz:text-base lg:text-lg xl:text-2xl font-bold font-serif animate-pulse "> Sentiment is <TypeTesting /> </div>       // component containing loading animation
+    }
 
-  // hardcoding regarding the overall body animation and other effect
-  document.querySelector('body').style.animation = "fadeIn 0.8s ease-in-out";
-  document.querySelector('html').style.scrollbarColor = "#4f46e5 #ffffff";
+    // hardcoding regarding the overall body animation and other effect
+    document.querySelector('body').style.animation = "fadeIn 0.8s ease-in-out";
+    document.querySelector('html').style.scrollbarColor = "#4f46e5 #ffffff";
 
-  return (
-    <>
+    return (
+        <>
 
-      {/* adding navbar seperately to occur on every page */}
-      <Navbar />
+            {/* adding navbar seperately to occur on every page */}
+            <Navbar />
 
-      {/* Setting up the routes here regarding different pages */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+            {/* Setting up the routes here regarding different pages */}
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
 
-    </>
-  )
+        </>
+    )
 }
 
 export default App
