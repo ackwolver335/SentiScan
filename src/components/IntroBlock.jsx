@@ -14,8 +14,12 @@ export default function IntroBlock() {
 
 				{/* Another Button's Div Block */}
 				<div className="navigationBtn xsz:gap-3 md:gap-5 xl:gap-6 w-full flex xsz:flex-col sm:flex-row">
-					<button className="text-white font-poppins font-medium xsz:text-sm bg-indigo xsz:rounded-md hover:scale-105 active:scale-95 ease-in duration-100 xsz:w-full sm:w-fit xsz:px-5 xsz:py-2 cursor-pointer xl:text-lg xl:px-7"> Start Free Trial </button>
-					<button className="text-white font-poppins font-medium xsz:text-sm bg-transparent border border-white xsz:rounded-md hover:scale-105 active:scale-95 ease-in duration-100 xsz:w-full sm:w-fit xsz:px-5 xsz:py-2 cursor-pointer xl:text-lg xl:px-7"> Watch Demo </button>
+					<a href="#demo">
+						<button className="text-white font-poppins font-medium xsz:text-sm bg-indigo xsz:rounded-md hover:scale-105 active:scale-95 ease-in duration-100 xsz:w-full sm:w-fit xsz:px-5 xsz:py-2 cursor-pointer xl:text-lg xl:px-7"> Start Free Trial </button>
+					</a>
+					<a href="#demo">
+						<button className="text-white font-poppins font-medium xsz:text-sm bg-transparent border border-white xsz:rounded-md hover:scale-105 active:scale-95 ease-in duration-100 xsz:w-full sm:w-fit xsz:px-5 xsz:py-2 cursor-pointer xl:text-lg xl:px-7"> Check Demo </button>
+					</a>
 				</div>
 
 			</div>

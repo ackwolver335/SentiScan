@@ -46,7 +46,7 @@ export default function Navbar() {
       </ul>
 
       {/* Button regarding Getting Started from Initial Point */}
-      <a href = "#">
+      <a href = "#demo">
         <button type = "button" className = "bg-indigo/90 xsz:shadow-sm xsz:px-2 xsz:py-1 font-poppins text-white xsz:rounded-md xsz:text-sm sm:text-base xl:text-lg lg:font-semibold cursor-pointer xl:px-4 lg:rounded-lg lg:shadow-lg active:scale-95 hover:scale-105 ease-in duration-100"> Get Started </button>
       </a>
 

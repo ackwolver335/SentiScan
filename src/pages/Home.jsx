@@ -5,6 +5,7 @@ import Features from '../components/Features'
 import Working from '../components/Working'
 import UseCases from '../components/UseCases'
 import Demo from '../components/Demo'
+import Redirect from '../components/Redirect'
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <Working />
             <UseCases />
             <Demo />
+            <Redirect />
         </>
     )
 }

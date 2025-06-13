@@ -18,7 +18,7 @@ export default function UseCases() {
             <div className="flex xsz:flex-col lg:flex-row xsz:justify-center lg:justify-evenly items-center xsz:gap-7 lg:gap-10 xl:gap-14 lg:px-5 2xl:px-7">
 
                 {/* Brand Monitoring */}
-                <div className="flex flex-col xsz:gap-3 items-start bg-white xsz:px-5 xsz:py-4 xsz:rounded-md sm:w-2/3 md:w-3/5 lg:w-fit shadow-md">
+                <div className="flex flex-col xsz:gap-3 items-start bg-white xsz:px-5 xsz:py-4 xsz:rounded-md sm:w-2/3 md:w-3/5 lg:w-fit shadow-md ease-in duration-150 lg:hover:scale-105 cursor-pointer lg:hover:shadow-lg">
                     <Backpack className="xsz:w-9 xsz:h-9 xl:w-12 xl:h-12 xl:p-2 xsz:p-[6px] xsz:rounded-md xl:rounded-xl text-indigo bg-indigo/30" />
                     <h4 className="text-secondary xsz:text-base xl:text-lg font-inter font-semibold"> Brand Monitoring </h4>
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
@@ -30,7 +30,7 @@ export default function UseCases() {
                 </div>
 
                 {/* Market Research */}
-                <div className="flex flex-col xsz:gap-3 items-start bg-white xsz:px-5 xsz:py-4 xsz:rounded-md sm:w-2/3 md:w-3/5 lg:w-fit shadow-md">
+                <div className="flex flex-col xsz:gap-3 items-start bg-white xsz:px-5 xsz:py-4 xsz:rounded-md sm:w-2/3 md:w-3/5 lg:w-fit shadow-md ease-in duration-150 lg:hover:scale-105 cursor-pointer lg:hover:shadow-lg">
                     <BarChart className="xsz:w-9 xsz:h-9 xl:w-12 xl:h-12 xl:p-2 xsz:p-[6px] xsz:rounded-md xl:rounded-xl text-green-500 bg-green-100" />
                     <h4 className="text-secondary xsz:text-base xl:text-lg font-inter font-semibold"> Market Research </h4>
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
@@ -42,7 +42,7 @@ export default function UseCases() {
                 </div>
 
                 {/* Customer Support */}
-                <div className="flex flex-col xsz:gap-3 items-start bg-white xsz:px-5 xsz:py-4 xsz:rounded-md sm:w-2/3 md:w-3/5 lg:w-fit shadow-md">
+                <div className="flex flex-col xsz:gap-3 items-start bg-white xsz:px-5 xsz:py-4 xsz:rounded-md sm:w-2/3 md:w-3/5 lg:w-fit shadow-md ease-in duration-150 lg:hover:scale-105 cursor-pointer lg:hover:shadow-lg">
                     <MessageCircle className="xsz:w-9 xsz:h-9 xl:w-12 xl:h-12 xl:p-2 xsz:p-[6px] xsz:rounded-md xl:rounded-xl text-purple-500 bg-purple-100" />
                     <h4 className="text-secondary xsz:text-base xl:text-lg font-inter font-semibold"> Customer Support </h4>
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
