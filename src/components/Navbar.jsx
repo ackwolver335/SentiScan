@@ -42,7 +42,7 @@ export default function Navbar() {
         <li> <a href = "#features" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Features </a> </li>
         <li> <a href = "#working" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> How It Works </a> </li>
         <li> <a href = "#useCases" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Use Cases </a> </li>
-        <li> <a href = "#" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Demo </a> </li>
+        <li> <a href = "#demo" className = "active:text-indigo hover:text-indigo/90 ease-in duration-150"> Demo </a> </li>
       </ul>
 
       {/* Button regarding Getting Started from Initial Point */}
