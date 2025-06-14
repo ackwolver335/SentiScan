@@ -31,6 +31,11 @@ export default function Demo() {
         } else {
             document.querySelector(".analyzedData").classList.remove("xsz:translate-y-[500px]");
         }
+
+        // setting a timer regarding automatically closing the view after 3-4 seconds incase user forget to do that
+        setTimeout(() => {
+            document.querySelector(".analyzedData").classList.add("xsz:translate-y-[500px]");
+        },5000);
     }
 
     // method for closing the analysis window
