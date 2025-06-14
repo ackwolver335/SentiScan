@@ -33,7 +33,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="fixed z-20 flex flex-row justify-between items-center xsz:top-1 xsz:right-1 xsz:left-1 sm:right-2 sm:left-2 xl:top-3 xl:left-5 xl:right-5 xsz:bg-white/65 lg:bg-white/55 xsz:m-3 xsz:p-3 sm:p-4 xl:px-5 xl:py-4 lg:rounded-xl xsz:rounded-md xsz:backdrop-blur-md lg:backdrop-blur-lg md:backdrop-blur-2xl xsz:shadow-lg">
+        <div className="fixed z-20 flex flex-row justify-between items-center xsz:top-1 xsz:right-1 xsz:left-1 sm:right-2 sm:left-2 xl:top-3 xl:left-5 xl:right-5 xsz:bg-white/65 lg:bg-white/55 xsz:m-3 xsz:p-3 sm:p-4 xl:px-5 lg:rounded-xl xsz:rounded-md xsz:backdrop-blur-md lg:backdrop-blur-lg md:backdrop-blur-2xl xsz:shadow-lg">
 
             {/* initial div for Icon and site name */}
             <div className="iconText flex flex-row items-center xsz:gap-1.5 sm:gap-2 2xl:gap-2 cursor-pointer">
@@ -43,10 +43,10 @@ export default function Navbar() {
 
             {/* Get Started Block */}
             <ul className="navList font-poppins flex xsz:absolute md:relative xsz:flex-col md:flex-row xsz:bg-white/90 md:bg-transparent xsz:backdrop-blur-3xl md:backdrop-blur-none xsz:shadow-lg md:shadow-none xsz:rounded-lg md:rounded-none xsz:top-16 sm:top-20 md:top-0 xsz:left-1 xsz:right-1 md:left-0 md:right-0 xsz:translate-x-[800px] md:translate-x-0 xsz:px-3 xsz:py-4 sm:px-4 md:p-0 xsz:gap-1.5 md:gap-5 xl:gap-7 xsz:text-sm sm:text-base xl:text-lg xsz:text-secondary xsz:font-semibold md:font-medium ease-in duration-250">
-                <li> <a href="#features" className="active:text-indigo hover:text-indigo/90 ease-in duration-150"> Features </a> </li>
-                <li> <a href="#working" className="active:text-indigo hover:text-indigo/90 ease-in duration-150"> How It Works </a> </li>
-                <li> <a href="#useCases" className="active:text-indigo hover:text-indigo/90 ease-in duration-150"> Use Cases </a> </li>
-                <li> <a href="#demo" className="active:text-indigo hover:text-indigo/90 ease-in duration-150"> Demo </a> </li>
+                <li> <a href="#features" className="active:text-indigo lg:hover:text-white ease-in duration-150"> Features </a> </li>
+                <li> <a href="#working" className="active:text-indigo lg:hover:text-white ease-in duration-150"> How It Works </a> </li>
+                <li> <a href="#useCases" className="active:text-indigo lg:hover:text-white ease-in duration-150"> Use Cases </a> </li>
+                <li> <a href="#demo" className="active:text-indigo lg:hover:text-white ease-in duration-150"> Demo </a> </li>
             </ul>
 
             {/* Button regarding Getting Started from Initial Point */}

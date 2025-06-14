@@ -38,9 +38,6 @@ function App() {
     return (
         <>
 
-            {/* adding navbar seperately to occur on every page */}
-            <Navbar />
-
             {/* Setting up the routes here regarding different pages */}
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -49,7 +46,8 @@ function App() {
             </Routes>
 
             {/* Footer for further redirections */}
-            <Footer />
+            {/* <Footer /> */}
+            {/* Removing footer for a temporary time interval */}
 
         </>
     )

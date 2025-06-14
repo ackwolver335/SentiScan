@@ -6,10 +6,13 @@ import Working from '../components/Working'
 import UseCases from '../components/UseCases'
 import Demo from '../components/Demo'
 import Redirect from '../components/Redirect'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function Home() {
     return (
         <>
+            <Navbar />
             <IntroBlock />
             <SentiIntro />
             <Features />
@@ -17,6 +20,7 @@ export default function Home() {
             <UseCases />
             <Demo />
             <Redirect />
+            <Footer />
         </>
     )
 }
