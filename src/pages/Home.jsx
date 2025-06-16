@@ -10,14 +10,18 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 export default function Home() {
+
+    // variable regarding setting up the page background
+    const background = "bg-gray-100";
+
     return (
         <div className='aboutIntro'>
             <Navbar />
             <IntroBlock />
             <SentiIntro />
-            <Features />
+            <Features bg={background} />
             <Working />
-            <UseCases />
+            <UseCases bg={background} />
             <Demo />
             <Redirect />
             <Footer />

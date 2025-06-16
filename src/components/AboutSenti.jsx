@@ -18,7 +18,7 @@ export default function AboutSenti() {
                     Also known as opinion mining or emotion AI, sentiment analysis determines whether a piece of text expresses a positive, negative, or neutral sentiment toward a subject. It helps businesses, researchers, and organizations understand the emotional tone behind words.
                 </p>
 
-                <div className="designedBlock flex flex-row xsz:gap-2 items-center bg-blue-200 xsz:pr-4 sm:pr-6 xsz:w-fit sm:w-5/6 xl:w-4/6">
+                <div className="designedBlock flex flex-row xsz:gap-2 items-center bg-blue-200 xsz:pr-4 sm:pr-6 xsz:w-fit sm:w-5/6 xl:w-4/6 xl:hover:rounded-tr-lg xl:hover:rounded-br-lg xl:hover:scale-105 ease-in duration-150 cursor-pointer">
                     <div className = "xsz:w-2 sm:w-1 xsz:h-16 lg:w-2 xl:h-18 bg-blue-600"></div>
                     <p className = "xsz:text-[12px] sm:text-sm xl:text-base xsz:py-2 xl:py-3 font-medium font-inter text-blue-500">
                         "Sentiment analysis allows us to transform unstructured text into structured data of public opinions."
