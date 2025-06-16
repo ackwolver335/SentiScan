@@ -9,7 +9,6 @@ import Contact from './pages/Contact'
 
 // componenets are imported here
 import TypeTesting from './components/TypeTesting'
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
         // variable as a timer for animation
         setTimeout(() => {
             setLoading(false)
-        }, 5300);
+        }, 4500);
 
     }, []);
 

@@ -128,6 +128,10 @@ body {
   background: #ffffff;
 }
 
+.aboutIntro{
+  animation: fadeIn 0.8s linear;
+}
+
 /* smoother animation regarding the overall page */
 @keyframes fadeIn {
   0% {

@@ -11,7 +11,7 @@ import Footer from '../components/Footer'
 
 export default function Home() {
     return (
-        <>
+        <div className='aboutIntro'>
             <Navbar />
             <IntroBlock />
             <SentiIntro />
@@ -21,6 +21,6 @@ export default function Home() {
             <Demo />
             <Redirect />
             <Footer />
-        </>
+        </div>
     )
 }
