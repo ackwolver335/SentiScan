@@ -13,6 +13,7 @@ export default function Home() {
 
     // variable regarding setting up the page background
     const background = "bg-gray-100";
+    const bg2 = "bg-white";
 
     return (
         <div className='aboutIntro'>
@@ -22,7 +23,7 @@ export default function Home() {
             <Features bg={background} />
             <Working />
             <UseCases bg={background} />
-            <Demo />
+            <Demo bg = {bg2} />
             <Redirect />
             <Footer />
         </div>

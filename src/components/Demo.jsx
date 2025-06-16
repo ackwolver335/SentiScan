@@ -1,7 +1,7 @@
 import Sentiment from 'sentiment'
 import {React, useState} from 'react';
 
-export default function Demo() {
+export default function Demo(props) {
 
     // variable for storing sentiment result providing sentiment type
     const [analysis,setAnalysis] = useState({});                                                  // for object on return
@@ -50,7 +50,7 @@ export default function Demo() {
     }
 
     return (
-        <div className="flex flex-col items-center xsz:py-16 xl:py-24 xsz:px-5 xsz:gap-7 lg:gap-10" id="demo">
+        <div className={`flex flex-col items-center xsz:py-16 xl:py-24 xsz:px-5 xsz:gap-7 lg:gap-10 ${props.bg}`} id="demo">
 
             {/* Heading & Intro regarding Usage */}
             <div className="flex flex-col items-center justify-center text-center xsz:gap-2 sm:gap-3 lg:gap-5 xl:gap-5">
