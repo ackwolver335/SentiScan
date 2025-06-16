@@ -21,7 +21,7 @@ export default function Features(props) {
                 <div className="flex flex-row xsz:gap-4 sm:gap-5 items-center bg-white xsz:px-5 xsz:py-4 xl:py-6 xsz:rounded-md xsz:shadow-md sm:w-2/3 lg:w-fit xl:gap-6 lg:hover:scale-105 ease-in duration-150">
 
                     {/* Left Side Icon */}
-                    <TrendingUp className="xsz:w-12 xsz:h-9 xl:w-14 xl:h-12 xl:rounded-lg xsz:p-1 xl:p-[] text-white bg-linear-to-br from-indigo to-blue-500 xsz:rounded-md" />
+                    <TrendingUp className="xsz:w-12 xsz:h-9 xl:w-14 xl:h-12 xl:rounded-lg xsz:p-1 text-white bg-linear-to-br from-indigo to-blue-500 xsz:rounded-md" />
 
                     <div className="flex flex-col xsz:gap-1 items-start">
                         <h3 className="text-base font-inter text-secondary/90 font-bold xl:text-lg"> Real-Time Analysis </h3>
