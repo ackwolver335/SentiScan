@@ -1,10 +1,10 @@
 import React from 'react'
-import NavDirect from '../components/NavDirect'
+import NavContact from '../components/NavContact'
 
 export default function Contact() {
 	return (
 		<>
-			<NavDirect />
+			<NavContact />
 		</>
 	)
 }

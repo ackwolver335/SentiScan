@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutSenti() {
     return (
-        <div className = "xsz:py-14 lg:py-20 flex flex-col items-center xsz:gap-5 md:gap-8 xl:gap-10">
+        <div className = "xsz:py-14 lg:py-20 flex flex-col items-center xsz:gap-5 md:gap-8 xl:gap-10" id = "aboutSenti">
             
             {/* Heading of the Block */}
             <h3 className = "xsz:text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-poppins font-bold text-secondary/80"> What is <span className = "bg-gradient-to-br from-indigo-600 to-pink-500 bg-clip-text text-transparent"> Sentiment Analysis </span> ? </h3>
