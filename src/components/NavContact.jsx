@@ -46,7 +46,7 @@ export default function NavDirect() {
 			<ul className="navbarList xsz:absolute xsz:bg-linear-to-br xsz:from-indigo/70 xsz:to-blue-400 xsz:rounded-lg md:bg-none md:from-transparent md:to-transparent xsz:shadow-lg md:shadow-none xsz:backdrop-blur-lg md:backdrop-blur-none xsz:px-4 xsz:py-3 xsz:gap-2 xsz:top-16 sm:top-20 xsz:left-1 xsz:right-1 sm:left-2  sm:right-2 md:left-0 md:right-0 md:top-0 md:relative flex xsz:flex-col md:flex-row md:gap-3 xl:gap-5 items-center xsz:translate-x-[800px] ease-in duration-350 md:translate-x-0 md:p-0 xsz:text-sm lg:text-base">
 				<Link to="/" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Home </Link>
 				<Link to="/about" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> About </Link>
-				<a href = "#" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Connect </a>
+				<a href = "#connect" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Connect </a>
 				<a href = "#demo" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Know More </a>
 			</ul>
 
