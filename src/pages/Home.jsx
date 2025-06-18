@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import IntroBlock from '../components/IntroBlock'
 import SentiIntro from '../components/SentiIntro'
 import Features from '../components/Features'
@@ -14,6 +14,11 @@ export default function Home() {
     // variable regarding setting up the page background
     const background = "bg-gray-100";
     const bg2 = "bg-white";
+
+    // changing the title when it comes to the Home Page
+    useEffect(() =>{
+        document.title = "Sentiment Analysis - Home"
+    },[]);
 
     return (
         <div className='aboutIntro'>
