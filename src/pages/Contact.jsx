@@ -12,11 +12,11 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<>
+		<div className = "aboutIntro">
 			<NavContact />
 			<ContactIntro />
 			<Connect />
 			<Questions />
-		</>
+		</div>
 	)
 }
