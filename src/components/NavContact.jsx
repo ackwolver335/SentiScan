@@ -47,7 +47,7 @@ export default function NavDirect() {
 				<Link to="/" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Home </Link>
 				<Link to="/about" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> About </Link>
 				<a href = "#connect" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Connect </a>
-				<a href = "#demo" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Know More </a>
+				<a href = "#questions" className = "text-white font-poppins lg:hover:text-secondary ease-in duration-150"> Know More </a>
 			</ul>
 
 			{/* Menu Button regarding small screens */}

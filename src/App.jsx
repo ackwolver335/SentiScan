@@ -45,8 +45,7 @@ function App() {
             </Routes>
 
             {/* Footer for further redirections */}
-            {/* <Footer /> */}
-            {/* Removing footer for a temporary time interval */}
+            <Footer />
 
         </>
     )

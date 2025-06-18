@@ -88,8 +88,8 @@ export default function Connect() {
 
                     {/* Button for submitting the Request */}
                     <div className="buttons flex flex-row items-center justify-start xsz:gap-3 sm:gap-4 lg:gap-5">
-                        <button type="submit" className="xsz:px-3 xsz:py-2 xsz:shadow-none cursor-pointer active:scale-95 lg:hover:scale-105 ease-in duration-150 lg:hover:lg:rounded-lg lg:hover:shadow-lg xsz:rounded-md bg-linear-to-br from-[#3b81f5] to-[#9234ea] text-white font-poppins xsz:text-sm sm:text-base font-medium"> Send Message </button>
-                        <button type="reset" className="xsz:px-3 xsz:py-2 xsz:shadow-none cursor-pointer active:scale-95 lg:hover:scale-105 ease-in duration-150 lg:hover:lg:rounded-lg lg:hover:shadow-lg xsz:rounded-md bg-linear-to-br from-[#3b81f5] to-[#9234ea] text-white font-poppins xsz:text-sm sm:text-base font-medium"> Clear All </button>
+                        <button type="submit" className="xsz:px-3 xsz:py-2 xsz:shadow-none cursor-pointer active:scale-95 hover:scale-105 ease-in duration-100 lg:hover:lg:rounded-lg lg:hover:shadow-lg xsz:rounded-md bg-linear-to-br from-[#3b81f5] to-[#9234ea] text-white font-poppins xsz:text-sm sm:text-base font-medium"> Send Message </button>
+                        <button type="reset" className="xsz:px-3 xsz:py-2 xsz:shadow-none cursor-pointer active:scale-95 hover:scale-105 ease-in duration-100 lg:hover:lg:rounded-lg lg:hover:shadow-lg xsz:rounded-md bg-linear-to-br from-[#3b81f5] to-[#9234ea] text-white font-poppins xsz:text-sm sm:text-base font-medium"> Clear All </button>
                     </div>
 
                 </form>

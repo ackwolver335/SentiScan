@@ -7,7 +7,6 @@ import UseCases from '../components/UseCases'
 import Demo from '../components/Demo'
 import Redirect from '../components/Redirect'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 
 export default function Home() {
 
@@ -30,7 +29,6 @@ export default function Home() {
             <UseCases bg={background} />
             <Demo bg = {bg2} />
             <Redirect />
-            <Footer />
         </div>
     )
 }

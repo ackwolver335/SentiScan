@@ -5,7 +5,6 @@ import AboutSenti from '../components/AboutSenti'
 import AboutWork from '../components/AboutWork'
 import Applications from '../components/Applications'
 import Demo from '../components/Demo'
-import Footer from '../components/Footer'
 
 export default function About() {
 
@@ -25,7 +24,6 @@ export default function About() {
             <AboutWork />
             <Applications />
             <Demo bg={background} />
-            <Footer />
         </div>
     )
 }
