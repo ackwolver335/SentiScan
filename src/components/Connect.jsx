@@ -24,7 +24,8 @@
 
         // details regarding different ids that are included in the 
         const serviceID = "service_krg6g4p";
-        const templateID = "template_zjunc5g";
+        const templateIDAR = "template_qspowuq";
+        const templateIDCU = "template_zjunc5g";
         const publicKey = "A_V7bsyGUneA_J-1V";
 
         // method for clearing all the data's value
@@ -43,20 +44,25 @@
                 const templateParams = {
                     to_email: userEmail,
                     from_name: `${userName.first} ${userName.second}`,
-                    from_site: 'Sentiment Analysis',
-                    from_company: userCompany,
-                    from_issue: userIssue,
-                    from_message: userMessage
+                    from_site: 'SentiScan Org',
+                    user_company: userCompany,
+                    user_issue: userIssue,
+                    user_message: userMessage
                 }
 
-                console.log(templateParams);
-
-                // time to send the message over to the user of emailjs/browser
-                emailjs.send(serviceID, templateID, templateParams, publicKey).then((response) => {
-                    console.log("Email Services worked successfully !", response);
+                // mail to be send over to the owner regarding new user request
+                emailjs.send(serviceID, templateIDCU, templateParams, publicKey).then((response) => {
+                    console.log("Message & Data send to the Owner !", response);
                     clearAllData();
                 }).catch((error) => {
-                    console.log("Error Occured here !", error);
+                    console.log("Error Occured to the Owner side !", error);
+                })
+
+                // mail to be send to the user that we have recieved his/her request
+                emailjs.send(serviceID,templateIDAR,templateParams,publicKey).then((response) => {
+                    console.log("Message send to the User !",response);
+                }).catch((error) => {
+                    console.log("Error Occured to user side !",error);
                 })
             }
 

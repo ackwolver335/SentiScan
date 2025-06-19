@@ -82,7 +82,7 @@ export default function Demo(props) {
             </div>
 
             {/* Main After Result Block containing Analyzed data */}
-            <div className={`analyzedData fixed xsz:bottom-10 lg:bottom-14 xl:bottom-20 xsz:translate-y-[500px] xsz:w-80 sm:w-100 md:w-[500px] xl:w-[700px] ${category === 'Positive' ? 'bg-green-300/50' : category === 'Negative' ? 'bg-red-300/40' : 'bg-yellow-300/40'} backdrop-blur-md xsz:py-3 xsz:px-4 md:py-5 md:px-6 xsz:rounded-md xsz:shadow-md md:shadow-lg flex flex-col xsz:gap-3 ease-in duration-250`}>
+            <div className={`analyzedData fixed xsz:bottom-10 lg:bottom-14 xl:bottom-20 xsz:translate-y-[500px] xsz:w-80 sm:w-100 md:w-[500px] xl:w-[700px] bg-white/80 backdrop-blur-md xsz:py-3 xsz:px-4 md:py-5 md:px-6 xsz:rounded-md xsz:shadow-md md:shadow-lg flex flex-col xsz:gap-3 ease-in duration-250`}>
 
                 {/* Heading Block with Closing Button */}
                 <div className="flex flex-row justify-between items-center">
