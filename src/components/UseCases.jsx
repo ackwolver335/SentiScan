@@ -24,7 +24,7 @@ export default function UseCases(props) {
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
                         Track brand perception across social media and review sites to identify trends and address issues proactively.
                     </p>
-                    <a href="#">
+                    <a href="https://survicate.com/blog/brand-sentiment-analysis/" target='_blank'>
                         <h6 className="font-inter font-medium text-indigo xsz:text-sm lg:text-base lg:hover:translate-x-2 lg:ease-in-out lg:duration-150 cursor-pointer"> Learn More → </h6>
                     </a>
                 </div>
@@ -36,7 +36,7 @@ export default function UseCases(props) {
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
                         Analyze customer opinions about products, features, and competitors to inform product development.
                     </p>
-                    <a href="#">
+                    <a href="https://sproutsocial.com/insights/sentiment-analysis-marketing/" target='_blank'>
                         <h6 className="font-inter font-medium text-indigo xsz:text-sm lg:text-base lg:hover:translate-x-2 lg:ease-in-out lg:duration-150 cursor-pointer"> Learn More → </h6>
                     </a>
                 </div>
@@ -48,7 +48,7 @@ export default function UseCases(props) {
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
                         Prioritize customer support tickets based on sentiment to address negative experiences quickly.
                     </p>
-                    <a href="#">
+                    <a href="https://www.sentisum.com/customer-sentiment-analysis" target='_blank'>
                         <h6 className="font-inter font-medium text-indigo xsz:text-sm lg:text-base lg:hover:translate-x-2 lg:ease-in-out lg:duration-150 cursor-pointer"> Learn More → </h6>
                     </a>
                 </div>

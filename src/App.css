@@ -129,7 +129,7 @@ body {
 }
 
 .aboutIntro{
-  animation: fadeIn 0.8s linear;
+  animation: fadeIn 0.5s linear;
 }
 
 /* smoother animation regarding the overall page */

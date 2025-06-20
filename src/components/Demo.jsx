@@ -8,7 +8,10 @@ export default function Demo(props) {
     const [category,setCategory] = useState('');                                                    // for setting sentiment type
 
     // method regarding text analysis
-    const analyseText = () => {
+    const analyseText = (e) => {
+
+        // preventing the default event
+        e.preventDefault();
 
         // creating dependencing for gathering sentiment data.
         let sentiment = new Sentiment();
@@ -40,7 +43,7 @@ export default function Demo(props) {
 
     // method for closing the analysis window
     const closeWindow = () => {
-        document.querySelector(".analyzedData").classList.toggle("xsz:translate-y-[500px]")
+        document.querySelector(".analyzedData").classList.toggle("xsz:translate-y-[500px]");
     }
 
     // method to copy the result shown below

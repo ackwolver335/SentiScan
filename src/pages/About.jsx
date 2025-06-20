@@ -5,6 +5,7 @@ import AboutSenti from '../components/AboutSenti'
 import AboutWork from '../components/AboutWork'
 import Applications from '../components/Applications'
 import Demo from '../components/Demo'
+import Clock from '../components/Clock'
 
 export default function About() {
 
@@ -19,6 +20,7 @@ export default function About() {
     return (
         <div className="aboutIntro">
             <NavDirect />
+            <Clock />
             <AboutIntro />
             <AboutSenti />
             <AboutWork />

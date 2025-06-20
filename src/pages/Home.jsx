@@ -7,6 +7,7 @@ import UseCases from '../components/UseCases'
 import Demo from '../components/Demo'
 import Redirect from '../components/Redirect'
 import Navbar from '../components/Navbar'
+import Clock from '../components/Clock'
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
     return (
         <div className='aboutIntro'>
             <Navbar />
+            <Clock />
             <IntroBlock />
             <SentiIntro />
             <Features bg={background} />

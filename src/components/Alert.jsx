@@ -27,13 +27,13 @@ export default function Alert(props) {
                 {props.alert.type === "Success" ?
                 
                     <p className = "xsz:text-sm font-inter font-medium xl:text-base text-green-500">
-                        Message sent sucessfully !
+                        {props.alert.message}
                     </p>
 
                     :
 
                     <p className = "xsz:text-sm font-inter font-medium xl:text-base text-red-500">
-                        You have provided wrong input !
+                        {props.alert.message}
                     </p>
                 
                 }

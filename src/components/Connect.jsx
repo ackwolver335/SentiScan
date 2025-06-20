@@ -8,7 +8,8 @@ export default function Connect() {
     // defining use state for alert component
     const [alert, setAlert] = useState({
         show: false,
-        type: 'Success'
+        type: 'Success',
+        message: "Message sent Successfully !",
     })
 
     // defining the variables for setting the values
@@ -46,7 +47,10 @@ export default function Connect() {
     const handleSubmit = (e) => {
         e.preventDefault();                                             // preventing the default reload of the page
 
-        if (document.querySelector("#userConfirmation").value === "on") {
+        // checking if one user have already send an email
+        const lastCheck = localStorage.getItem("emailData");
+
+        if (document.querySelector("#userConfirmation").value === "on" && !lastCheck) {
             // object to be passed when creating a dynamic changes onSubmit
             const templateParams = {
                 to_email: userEmail,
@@ -61,36 +65,46 @@ export default function Connect() {
             emailjs.send(serviceID, templateIDCU, templateParams, publicKey).then((response) => {
                 clearAllData();
             }).catch((error) => {
-                setAlert({ show: true, type: "Warning" });
+                setAlert({ show: true, type: "Warning", message : "Error in sending credentials !" });
 
                 // timer for the alert component
                 setTimeout(() => {
-                    setAlert({ show : false,type: 'Warning' });
-                },3500);
+                    setAlert({ show: false, type: 'Warning', message : "Error in sending Message !" });
+                }, 3500);
 
             })
 
             // mail to be send to the user that we have recieved his/her request
             emailjs.send(serviceID, templateIDAR, templateParams, publicKey).then((response) => {
-                setAlert({ show: true, type: "Success" });
+                setAlert({ show: true, type: "Success", message : "Feedback send Successfully !" });
 
                 // timer to close the message box
                 setTimeout(() => {
-                    setAlert({ show : false,type: 'Success' });
-                },3500);
+                    setAlert({ show: false, type: 'Success', message: "Feedback sent Successfully !" });
+                }, 3500);
 
             }).catch((error) => {
-                setAlert({ show: true, type: "Warning" });
+                setAlert({ show: true, type: "Warning", message : "Error in getting Data !" });
 
                 // timer to be stopped after the warning
                 setTimeout(() => {
-                    setAlert({ show : false,type: 'Warning' });
-                },3500);
+                    setAlert({ show: false, type: 'Warning', message : "Error in getting Data !" });
+                }, 3500);
             })
+
+            // setting data in the localstorage for not allowing user to send multiple emails
+            localStorage.setItem("emailData", JSON.stringify({ userData: "sentSuccess" }));
         }
 
         else {
-            setAlert({ show: false, type: "Warning" });
+            setAlert({ show: true, type: "Warning", message : "Wrong Credentials or already filled !" });
+            clearAllData();
+
+            // timer for the alert component
+            setTimeout(() => {
+                setAlert({ show: false, type: 'Warning', message : "Wrong Credentials or already filled !" });
+            }, 3500);
+
             return
         }
 
