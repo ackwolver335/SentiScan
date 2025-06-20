@@ -21,16 +21,16 @@ export default function Clock() {
 
     // onClick Method for getting time
     const checkTime = () => {
-        document.querySelector(".digiClock").classList.toggle("xsz:translate-x-24");
+        document.querySelector(".digiClock").classList.toggle("xsz:translate-x-26");
 
         // timeout after which it automatically get aside
         setTimeout(() => {
-            document.querySelector(".digiClock").classList.add("xsz:translate-x-24");
+            document.querySelector(".digiClock").classList.add("xsz:translate-x-26");
         },3000);
     }
 
     return (
-        <div className="digiClock fixed bg-indigo/70 backdrop-blur-lg xsz:rounded-md lg:rounded-xl xsz:px-3 xsz:py-2 sm:py-3 xsz:translate-x-24 xsz:bottom-15 lg:bottom-30 right-0 flex flex-row items-center xsz:gap-3 ease-in duration-150">
+        <div className="digiClock fixed bg-indigo/70 backdrop-blur-lg xsz:rounded-md lg:rounded-xl xsz:px-3 xsz:py-2 sm:py-3 xsz:translate-x-26 xsz:bottom-15 lg:bottom-30 right-0 flex flex-row items-center xsz:gap-3 ease-in duration-150">
 
             {/* Clock Icon to click and get time */}
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-alarm xsz:w-5 lg:w-6 cursor-pointer text-white xsz:mr-4 lg:mr-1" viewBox="0 0 16 16" onClick={checkTime}>
