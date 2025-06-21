@@ -1,6 +1,17 @@
 import { Smile, Frown, Meh } from 'lucide-react'
 
-export default function IntroBlock() {
+export default function IntroBlock(props) {
+
+	// button sound when get clicked
+    const clickBtn = new Audio(props.sound);
+    clickBtn.preload = 'auto';
+    clickBtn.volume = '0.5';                    // volumne adjusted to 60%
+
+    // method for using it
+    const getSound = () => {
+        clickBtn.play();
+    }
+
 	return (
 		<div className="bg-dots xsz:pt-22 sm:pt-30 xsz:pb-10 lg:pb-20 xsz:px-6 lg:px-8 lg:pt-36 flex xsz:flex-col md:flex-row xsz:gap-3 sm:gap-5 xsz:justify-between lg:justify-center 2xl:justify-evenly lg:gap-10 xl:gap-0 items-center">
 
@@ -14,10 +25,10 @@ export default function IntroBlock() {
 
 				{/* Another Button's Div Block */}
 				<div className="navigationBtn xsz:gap-3 md:gap-5 xl:gap-6 w-full flex xsz:flex-col sm:flex-row">
-					<a href="#demo">
+					<a href="#demo" onClick={getSound}>
 						<button className="text-white font-poppins font-medium xsz:text-sm bg-indigo xsz:rounded-md hover:scale-105 active:scale-95 ease-in duration-100 xsz:w-full sm:w-fit xsz:px-5 xsz:py-2 cursor-pointer xl:text-lg xl:px-7"> Start Free Trial </button>
 					</a>
-					<a href="#demo">
+					<a href="#demo" onClick={getSound}>
 						<button className="text-white font-poppins font-medium xsz:text-sm bg-transparent border border-white xsz:rounded-md hover:scale-105 active:scale-95 ease-in duration-100 xsz:w-full sm:w-fit xsz:px-5 xsz:py-2 cursor-pointer xl:text-lg xl:px-7"> Check Demo </button>
 					</a>
 				</div>

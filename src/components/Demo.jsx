@@ -1,11 +1,21 @@
 import Sentiment from 'sentiment'
-import {React, useState} from 'react';
+import { React, useState } from 'react';
 
 export default function Demo(props) {
 
+    // button sound when get clicked
+    const clickBtn = new Audio(props.sound);
+    clickBtn.preload = 'auto';
+    clickBtn.volume = '0.5';                    // volumne adjusted to 60%
+
+    // method for using it
+    const getSound = () => {
+        clickBtn.play();
+    }
+
     // variable for storing sentiment result providing sentiment type
-    const [analysis,setAnalysis] = useState({});                                                  // for object on return
-    const [category,setCategory] = useState('');                                                    // for setting sentiment type
+    const [analysis, setAnalysis] = useState({});                                                  // for object on return
+    const [category, setCategory] = useState('');                                                    // for setting sentiment type
 
     // method regarding text analysis
     const analyseText = (e) => {
@@ -20,25 +30,26 @@ export default function Demo(props) {
 
         // classifying sentiments category
         let sentimentType = "Neutral";
-        if(result.score > 0){
+        if (result.score > 0) {
             sentimentType = "Positive";
-        } else if(result.score < 0){
+        } else if (result.score < 0) {
             sentimentType = "Negative";
         }
 
         // setting the category of the sentiment
         setCategory(sentimentType);
 
-        if(document.querySelector('#userText').value === ''){
+        if (document.querySelector('#userText').value === '') {
             return
         } else {
+            getSound();                                                                                 // getting sound effects
             document.querySelector(".analyzedData").classList.remove("xsz:translate-y-[500px]");
         }
 
         // setting a timer regarding automatically closing the view after 3-4 seconds incase user forget to do that
         setTimeout(() => {
             document.querySelector(".analyzedData").classList.add("xsz:translate-y-[500px]");
-        },5500);
+        }, 5500);
     }
 
     // method for closing the analysis window
@@ -50,6 +61,7 @@ export default function Demo(props) {
     const copyResult = () => {
         const copyContent = document.querySelector('.resultContent').innerText;
         navigator.clipboard.writeText(copyContent);
+        getSound();                                                                                 // getting sound effects
     }
 
     return (
@@ -78,7 +90,7 @@ export default function Demo(props) {
                     {/* Getting Values through it */}
                     <div className="workFlow xsz:space-x-2 md:space-x-3 xl:space-x-4">
                         <button type="button" className="analyseBtn bg-indigo/80 xsz:rounded-sm active:scale-95 active:shadow-md hover:scale-105 ease-in duration-100 xsz:px-3 xsz:py-1 font-inter font-medium text-white w-fit xsz:text-sm xl:rounded-lg xl:text-base cursor-pointer xl:px-4" onClick={analyseText}> Analyse Text </button>
-                        <button type="reset" className="bg-indigo/80 xsz:rounded-sm active:scale-95 active:shadow-md hover:scale-105 ease-in duration-100 xsz:px-3 xsz:py-1 font-inter font-medium text-white w-fit xsz:text-sm xl:rounded-lg xl:text-base cursor-pointer xl:px-4"> Clear Text </button>
+                        <button type="reset" className="bg-indigo/80 xsz:rounded-sm active:scale-95 active:shadow-md hover:scale-105 ease-in duration-100 xsz:px-3 xsz:py-1 font-inter font-medium text-white w-fit xsz:text-sm xl:rounded-lg xl:text-base cursor-pointer xl:px-4" onClick={getSound}> Clear Text </button>
                     </div>
                 </form>
 
@@ -97,12 +109,12 @@ export default function Demo(props) {
                 </div>
 
                 <div className="flex flex-col items-start xsz:gap-1">
-                    
-                    <p className = {`xsz:text-sm lg:text-base font-inter font-medium ${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'}`}> Sentiment Category : {category} </p>
-                    <p className = {`xsz:text-sm lg:text-base font-inter font-medium ${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'}`}> Sentiment Score : {analysis.score} </p>
-                    <p className = {`xsz:text-sm lg:text-base font-inter font-medium ${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'}`}> Percentage : {analysis.comparative * 100}% </p>
 
-                    <p className = "resultContent hidden">
+                    <p className={`xsz:text-sm lg:text-base font-inter font-medium ${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'}`}> Sentiment Category : {category} </p>
+                    <p className={`xsz:text-sm lg:text-base font-inter font-medium ${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'}`}> Sentiment Score : {analysis.score} </p>
+                    <p className={`xsz:text-sm lg:text-base font-inter font-medium ${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'}`}> Percentage : {analysis.comparative * 100}% </p>
+
+                    <p className="resultContent hidden">
                         Sentiment Category : {category} <br />
                         Sentiment Score : {analysis.score} <br />
                         Percentage : {analysis.comparative * 100}% <br />
@@ -111,7 +123,7 @@ export default function Demo(props) {
                 </div>
 
                 {/* Button regarding Result to be Copied */}
-                <button className = {`${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'} ${category === 'Positive' ? 'bg-green-300/50' : category === 'Negative' ? 'bg-red-300/40' : 'bg-yellow-300/40'} font-inter font-semibold xsz:text-sm lg:text-base w-fit xsz:px-3 xsz:py-1 lg:px-4 lg:py-2 cursor-pointer lg:shadow-md xsz:rounded-md active:scale-95 hover:scale-105 ease-in duration-150`} onClick={copyResult}> Copy Result </button>
+                <button className={`${category === 'Positive' ? 'text-green-700' : category === 'Negative' ? 'text-red-500' : 'text-yellow-700'} ${category === 'Positive' ? 'bg-green-300/50' : category === 'Negative' ? 'bg-red-300/40' : 'bg-yellow-300/40'} font-inter font-semibold xsz:text-sm lg:text-base w-fit xsz:px-3 xsz:py-1 lg:px-4 lg:py-2 cursor-pointer lg:shadow-md xsz:rounded-md active:scale-95 hover:scale-105 ease-in duration-150`} onClick={copyResult}> Copy Result </button>
 
             </div>
 

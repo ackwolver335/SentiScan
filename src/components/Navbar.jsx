@@ -1,13 +1,26 @@
 import React from 'react'
 import { FileText, Menu } from 'lucide-react'
 
-export default function Navbar() {
+export default function Navbar(props) {
+
+    // button sound when get clicked
+    const clickBtn = new Audio(props.sound);
+    clickBtn.preload = 'auto';
+    clickBtn.volume = '0.5';                    // volumne adjusted to 60%
+
+    // method for using it
+    const getSound = () => {
+        clickBtn.play();
+    }
 
     // menu Button options
     let menuRotate = false;
 
     // method regarding Menu Button Toggle
     const toggleMenu = () => {
+
+        // running the audio
+        getSound();
 
         // conditional block regarding Button rotation
         if (menuRotate == false) {
@@ -36,9 +49,11 @@ export default function Navbar() {
         <div className="fixed z-20 flex flex-row justify-between items-center xsz:top-1 xsz:right-1 xsz:left-1 sm:right-2 sm:left-2 xl:top-3 xl:left-5 xl:right-5 xsz:bg-white/65 lg:bg-white/55 xsz:m-3 xsz:p-3 sm:p-4 xl:px-5 lg:rounded-xl xsz:rounded-md xsz:backdrop-blur-md lg:backdrop-blur-lg md:backdrop-blur-2xl xsz:shadow-lg">
 
             {/* initial div for Icon and site name */}
-            <div className="iconText flex flex-row items-center xsz:gap-1.5 sm:gap-2 2xl:gap-2 cursor-pointer">
+            <div className="iconText flex flex-row items-center xsz:gap-1.5 sm:gap-2 2xl:gap-2 cursor-pointer" onClick={getSound}>
                 <FileText className="xsz:w-6 xsz:h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8  text-indigo" />
-                <h2 className="font-poppins text-charcoal xsz:text-base sm:text-lg xl:text-xl xsz:font-semibold"> SentiScan </h2>
+                <a href="#">
+                    <h2 className="font-poppins text-charcoal xsz:text-base sm:text-lg xl:text-xl xsz:font-semibold"> SentiScan </h2>
+                </a>
             </div>
 
             {/* Get Started Block */}
@@ -50,7 +65,7 @@ export default function Navbar() {
             </ul>
 
             {/* Button regarding Getting Started from Initial Point */}
-            <a href="#demo">
+            <a href="#demo" onClick={getSound}>
                 <button type="button" className="bg-indigo/90 xsz:shadow-sm xsz:px-2 xsz:py-1 font-poppins text-white xsz:rounded-md xsz:text-sm sm:text-base xl:text-lg lg:font-semibold cursor-pointer xl:px-4 lg:rounded-lg lg:shadow-lg active:scale-95 hover:scale-105 ease-in duration-100"> Get Started </button>
             </a>
 
