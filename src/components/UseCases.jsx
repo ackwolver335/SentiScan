@@ -2,16 +2,6 @@ import { Backpack, BarChart, MessageCircle } from 'lucide-react'
 
 export default function UseCases(props) {
 
-    // button sound when get clicked
-    const clickBtn = new Audio(props.sound);
-    clickBtn.preload = 'auto';
-    clickBtn.volume = '0.5';                    // volumne adjusted to 60%
-
-    // method for using it
-    const getSound = () => {
-        clickBtn.play();
-    }
-
     return (
         <div className={`flex flex-col xsz:py-16 xl:py-24 xsz:px-5 xsz:gap-7 lg:gap-10 xl:gap-12 ${props.bg}`} id="useCases">
 
@@ -35,7 +25,7 @@ export default function UseCases(props) {
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
                         Track brand perception across social media and review sites to identify trends and address issues proactively.
                     </p>
-                    <a href="https://survicate.com/blog/brand-sentiment-analysis/" target='_blank' onClick={getSound}>
+                    <a href="https://survicate.com/blog/brand-sentiment-analysis/" target='_blank' onClick={props.sound}>
                         <h6 className="font-inter font-medium text-indigo xsz:text-sm lg:text-base lg:hover:translate-x-2 lg:ease-in-out lg:duration-150 cursor-pointer"> Learn More → </h6>
                     </a>
                 </div>
@@ -47,7 +37,7 @@ export default function UseCases(props) {
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
                         Analyze customer opinions about products, features, and competitors to inform product development.
                     </p>
-                    <a href="https://sproutsocial.com/insights/sentiment-analysis-marketing/" target='_blank' onClick={getSound}>
+                    <a href="https://sproutsocial.com/insights/sentiment-analysis-marketing/" target='_blank' onClick={props.sound}>
                         <h6 className="font-inter font-medium text-indigo xsz:text-sm lg:text-base lg:hover:translate-x-2 lg:ease-in-out lg:duration-150 cursor-pointer"> Learn More → </h6>
                     </a>
                 </div>
@@ -59,7 +49,7 @@ export default function UseCases(props) {
                     <p className="xsz:text-sm text-secondary/90 font-inter xl:text-base font-medium">
                         Prioritize customer support tickets based on sentiment to address negative experiences quickly.
                     </p>
-                    <a href="https://www.sentisum.com/customer-sentiment-analysis" target='_blank' onClick={getSound}>
+                    <a href="https://www.sentisum.com/customer-sentiment-analysis" target='_blank' onClick={props.sound}>
                         <h6 className="font-inter font-medium text-indigo xsz:text-sm lg:text-base lg:hover:translate-x-2 lg:ease-in-out lg:duration-150 cursor-pointer"> Learn More → </h6>
                     </a>
                 </div>

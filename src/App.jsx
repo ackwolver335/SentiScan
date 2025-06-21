@@ -16,6 +16,17 @@ import Footer from './components/Footer';
 
 function App() {
 
+    // button sound when get clicked
+    const clickBtn = new Audio(clickSound);
+    clickBtn.preload = 'auto';
+    clickBtn.volume = '0.5';                    // volumne adjusted to 60%
+
+    // method for using it
+    const getSound = () => {
+        clickBtn.currentTime = 0;               // rewind to start
+        clickBtn.play();
+    }
+
     // defining the state for loading animation
     const [loading, setLoading] = useState(true);
 
@@ -42,13 +53,13 @@ function App() {
 
             {/* Setting up the routes here regarding different pages */}
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/" element={<Home sound={getSound} />} />
+                <Route path="/about" element={<About sound={getSound} />} />
+                <Route path="/contact" element={<Contact sound={getSound} />} />
             </Routes>
 
             {/* Footer for further redirections */}
-            <Footer sound={clickSound} />
+            <Footer sound={getSound} />
 
         </>
     )

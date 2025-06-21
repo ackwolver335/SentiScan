@@ -2,13 +2,16 @@ import React from 'react'
 import {FileText, Menu} from 'lucide-react';
 import {Link} from 'react-router-dom'
 
-export default function NavDirect() {
+export default function NavDirect(props) {
 
 	// menu Button variable
 	let menuRotate = false;
 
 	// method for toggle menu icon
 	const toggleMenu = () => {
+
+        // sound effect
+        props.sound();
 
         // conditional block regarding Button rotation
         if (menuRotate == false) {
@@ -37,9 +40,9 @@ export default function NavDirect() {
 		<div className="fixed z-20 flex flex-row justify-between items-center xsz:top-1 xsz:right-1 xsz:left-1 sm:right-2 sm:left-2 xl:top-3 xl:left-5 xl:right-5 bg-linear-to-br from-indigo/80 to-blue-500/80 xsz:m-3 xsz:p-3 sm:p-4 xl:px-5 xl:py-3 lg:rounded-xl xsz:rounded-md xsz:backdrop-blur-xl xsz:shadow-md xl:shadow-lg">
 			
 			{/* First Heading Icon and Name */}
-			<div className="iconText flex flex-row items-center xsz:gap-1.5 sm:gap-2 2xl:gap-2 cursor-pointer">
+			<div className="iconText flex flex-row items-center xsz:gap-1.5 sm:gap-2 2xl:gap-2 cursor-pointer" onClick={props.sound}>
                 <FileText className="xsz:w-6 xsz:h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8  text-white" />
-                <h2 className="font-poppins text-white xsz:text-base sm:text-lg xl:text-xl xsz:font-medium"> SentiScan </h2>
+                <Link to="/" className="font-poppins text-white xsz:text-base sm:text-lg xl:text-xl xsz:font-medium"> SentiScan </Link>
             </div>
 
 			{/* Redirection Nav Elements */}

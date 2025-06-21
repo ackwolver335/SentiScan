@@ -3,16 +3,6 @@ import { React, useState } from 'react';
 
 export default function Demo(props) {
 
-    // button sound when get clicked
-    const clickBtn = new Audio(props.sound);
-    clickBtn.preload = 'auto';
-    clickBtn.volume = '0.5';                    // volumne adjusted to 60%
-
-    // method for using it
-    const getSound = () => {
-        clickBtn.play();
-    }
-
     // variable for storing sentiment result providing sentiment type
     const [analysis, setAnalysis] = useState({});                                                  // for object on return
     const [category, setCategory] = useState('');                                                    // for setting sentiment type
@@ -42,7 +32,11 @@ export default function Demo(props) {
         if (document.querySelector('#userText').value === '') {
             return
         } else {
-            getSound();                                                                                 // getting sound effects
+
+            // sound effect
+            props.sound();
+
+            // showing the content
             document.querySelector(".analyzedData").classList.remove("xsz:translate-y-[500px]");
         }
 
@@ -59,9 +53,13 @@ export default function Demo(props) {
 
     // method to copy the result shown below
     const copyResult = () => {
+
+        // sound effect
+        props.sound();
+
+        // copy content code
         const copyContent = document.querySelector('.resultContent').innerText;
         navigator.clipboard.writeText(copyContent);
-        getSound();                                                                                 // getting sound effects
     }
 
     return (
@@ -90,7 +88,7 @@ export default function Demo(props) {
                     {/* Getting Values through it */}
                     <div className="workFlow xsz:space-x-2 md:space-x-3 xl:space-x-4">
                         <button type="button" className="analyseBtn bg-indigo/80 xsz:rounded-sm active:scale-95 active:shadow-md hover:scale-105 ease-in duration-100 xsz:px-3 xsz:py-1 font-inter font-medium text-white w-fit xsz:text-sm xl:rounded-lg xl:text-base cursor-pointer xl:px-4" onClick={analyseText}> Analyse Text </button>
-                        <button type="reset" className="bg-indigo/80 xsz:rounded-sm active:scale-95 active:shadow-md hover:scale-105 ease-in duration-100 xsz:px-3 xsz:py-1 font-inter font-medium text-white w-fit xsz:text-sm xl:rounded-lg xl:text-base cursor-pointer xl:px-4" onClick={getSound}> Clear Text </button>
+                        <button type="reset" className="bg-indigo/80 xsz:rounded-sm active:scale-95 active:shadow-md hover:scale-105 ease-in duration-100 xsz:px-3 xsz:py-1 font-inter font-medium text-white w-fit xsz:text-sm xl:rounded-lg xl:text-base cursor-pointer xl:px-4" onClick={props.sound}> Clear Text </button>
                     </div>
                 </form>
 

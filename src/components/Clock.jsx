@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Clock() {
+export default function Clock(props) {
 
     // time variable for setting time
     const [time, setTime] = useState({
@@ -21,6 +21,11 @@ export default function Clock() {
 
     // onClick Method for getting time
     const checkTime = () => {
+        
+        // sound effect
+        props.sound()
+
+        // showing time
         document.querySelector(".digiClock").classList.toggle("xsz:translate-x-26");
 
         // timeout after which it automatically get aside

@@ -7,7 +7,7 @@ import Applications from '../components/Applications'
 import Demo from '../components/Demo'
 import Clock from '../components/Clock'
 
-export default function About() {
+export default function About(props) {
 
     // variable regarding setting up the page background
     const background = "bg-blue-100";
@@ -19,13 +19,13 @@ export default function About() {
 
     return (
         <div className="aboutIntro">
-            <NavDirect />
-            <Clock />
+            <NavDirect sound={props.sound} />
+            <Clock sound={props.sound} />
             <AboutIntro />
             <AboutSenti />
             <AboutWork />
             <Applications />
-            <Demo bg={background} />
+            <Demo bg={background} sound={props.sound} />
         </div>
     )
 }

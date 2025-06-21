@@ -5,7 +5,7 @@ import Connect from '../components/Connect'
 import Questions from '../components/Questions';
 import Clock from '../components/Clock';
 
-export default function Contact() {
+export default function Contact(props) {
 
 	// changing the title when it comes to the Home Page
 	useEffect(() => {
@@ -14,10 +14,10 @@ export default function Contact() {
 
 	return (
 		<div className = "aboutIntro">
-			<NavContact />
-			<Clock />
+			<NavContact sound={props.sound} />
+			<Clock sound={props.sound} />
 			<ContactIntro />
-			<Connect />
+			<Connect sound={props.sound} />
 			<Questions />
 		</div>
 	)

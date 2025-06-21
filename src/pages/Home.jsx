@@ -8,9 +8,8 @@ import Demo from '../components/Demo'
 import Redirect from '../components/Redirect'
 import Navbar from '../components/Navbar'
 import Clock from '../components/Clock'
-import clickSound from '../assets/audio.mp3'
 
-export default function Home() {
+export default function Home(props) {
 
     // variable regarding setting up the page background
     const background = "bg-gray-100";
@@ -23,14 +22,14 @@ export default function Home() {
 
     return (
         <div className='aboutIntro'>
-            <Navbar sound={clickSound} />
-            <Clock />
-            <IntroBlock sound={clickSound} />
+            <Navbar sound={props.sound} />
+            <Clock sound={props.sound} />
+            <IntroBlock sound={props.sound} />
             <SentiIntro />
             <Features bg={background} />
             <Working />
-            <UseCases bg={background} sound={clickSound} />
-            <Demo bg={bg2} sound={clickSound}/>
+            <UseCases bg={background} sound={props.sound} />
+            <Demo bg={bg2} sound={props.sound}/>
             <Redirect />
         </div>
     )
