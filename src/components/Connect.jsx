@@ -40,9 +40,6 @@ export default function Connect(props) {
     const clearAllData = () => {
         let blankData = '';
 
-        // sound effect
-        props.sound();
-
         // clear data code
         setuserName({ first: blankData, second: blankData });
         [setuserEmail, setuserCompany, setuserIssue, setuserMessage].forEach(setter => setter(blankData));
@@ -79,7 +76,7 @@ export default function Connect(props) {
                 // timer for the alert component
                 setTimeout(() => {
                     setAlert({ show: false, type: 'Warning', message: "Error in sending Message !" });
-                }, 3500);
+                }, 2500);
 
             })
 
@@ -90,7 +87,7 @@ export default function Connect(props) {
                 // timer to close the message box
                 setTimeout(() => {
                     setAlert({ show: false, type: 'Success', message: "Feedback sent Successfully !" });
-                }, 3500);
+                }, 2500);
 
             }).catch(() => {
                 setAlert({ show: true, type: "Warning", message: "Error in getting Data !" });
@@ -98,7 +95,7 @@ export default function Connect(props) {
                 // timer to be stopped after the warning
                 setTimeout(() => {
                     setAlert({ show: false, type: 'Warning', message: "Error in getting Data !" });
-                }, 3500);
+                }, 2500);
             })
 
             // setting data in the localstorage for not allowing user to send multiple emails
@@ -112,7 +109,7 @@ export default function Connect(props) {
             // timer for the alert component
             setTimeout(() => {
                 setAlert({ show: false, type: 'Warning', message: "Wrong Credentials or already filled !" });
-            }, 3500);
+            }, 2500);
 
             return
         }
