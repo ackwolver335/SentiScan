@@ -75,18 +75,17 @@ export default function Connect(props) {
 
                 // timer for the alert component
                 setTimeout(() => {
-                    setAlert({ show: false, type: 'Warning', message: "Error in sending Message !" });
+                    setAlert(prev => ({ ...prev, show: false}));
                 }, 2500);
-
             })
 
             // mail to be send to the user that we have recieved his/her request
             emailjs.send(serviceID, templateIDAR, templateParams, publicKey).then(() => {
-                setAlert({ show: true, type: "Success", message: "Feedback send Successfully !" });
+                setAlert({ show: true, type: "Success", message: "Thanks for sending Feedback !" });
 
                 // timer to close the message box
                 setTimeout(() => {
-                    setAlert({ show: false, type: 'Success', message: "Feedback sent Successfully !" });
+                    setAlert(prev => ({ ...prev, show: false}));
                 }, 2500);
 
             }).catch(() => {
@@ -94,7 +93,7 @@ export default function Connect(props) {
 
                 // timer to be stopped after the warning
                 setTimeout(() => {
-                    setAlert({ show: false, type: 'Warning', message: "Error in getting Data !" });
+                    setAlert(prev => ({ ...prev, show: false}));
                 }, 2500);
             })
 
@@ -108,7 +107,7 @@ export default function Connect(props) {
 
             // timer for the alert component
             setTimeout(() => {
-                setAlert({ show: false, type: 'Warning', message: "Wrong Credentials or already filled !" });
+                setAlert(prev => ({ ...prev, show: false}));
             }, 2500);
 
             return
